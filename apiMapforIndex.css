@@ -1,0 +1,121 @@
+@font-face{
+    font-family: orbitron;
+    src : url('orbitron.woff')
+}
+body{
+    margin: 5vh 5vw;
+    background-color: cyan;
+    font-family: orbitron;
+}
+#map {
+    height: 80vh;
+    width: 93vw;
+    margin: auto;
+}
+h2{
+    text-align: center;
+}
+
+.mappie, .lucht{
+    margin-top: 50px;
+}
+
+#vlieg, #vlieg2 {
+    font-family: orbitron;
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    width: 80%;
+    height: 50px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background: #ee8a65;
+}
+
+#weather, #weather2 {
+	background-color: white;
+	width: 80%;
+	padding: 5px;
+    margin: 10px auto;
+}
+
+p{
+    display: none;
+}
+
+.mappie{
+    grid-area: mappie;
+}
+.knop{
+    grid-area: knop;
+}
+.lucht{
+    grid-area: lucht;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1365px){
+
+    p{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1919px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "mappie knop"
+        "lucht lucht";
+    }
+        
+    #map {
+        width: 50vw;
+    }
+
+    .knop{
+        margin-top: 200px;
+    }
+    #weather, #weather2{
+        width: 500px;
+    }
+    p{
+        display: block;
+    }
+
+
+}
+
+
+@media only screen and (min-width:1920px) {
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "mappie mappie"
+        "knop lucht";
+    }
+        
+
+    .knop{
+        margin-top: 50px;
+    }
+
+    #weather, #weather2{
+        width: 500px;
+    }
+    #vlieg, #vlieg2{
+        height: 100px;
+        font-size: 30px;
+    }
+    p{
+        display: block;
+    }
+
+
+}

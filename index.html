@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+     <meta charset="utf-8">
+     <title> Map for landing yeet </title>
+     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+     <link href="apiMapforIndex.css" type="text/css" rel="stylesheet" />
+     <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
+     <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+     <!-- Geocoder -->
+     <script
+          src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
+     <link rel="stylesheet"
+          href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css" />
+
+
+</head>
+
+<body>
+     <header>
+          <h2>Landingskaart SpaceX</h2>
+     </header>
+     <main>
+          <div class="mappie">
+               <h3>Map Weergave</h3>
+               <p>Dit is de kaart waar je kan zien waar je gaat landen. We hebben 2 landingsplekken voorbereid waar plek is.</p>
+               <div id="map"></div>
+          </div>
+          <div class="knop">
+               <button id="vlieg">Naar de eerst landingsplek vliegen.</button>
+               <button id="vlieg2">Naar de tweede landingsplek vliegen.</button>
+          </div>
+          <div class="lucht">
+               <h3>Vervuilings weergave</h3>
+               <p>Dit is de vervuilingsweergave. Dit heeft invloed op het landen van de racket!<br /> De streefwaarde voor ozon is 120 en de streefwwaarde voor carbonmonoxide is tussen 0 en 900</p>
+               <article id="weather"></article>     
+               <article id="weather2"></article>
+          </div>
+     </main>
+</body>
+<script type="text/javascript" src="aipiforindex.js"> </script>
+
+
+</html>
