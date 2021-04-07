@@ -4,8 +4,9 @@
 }
 body{
     margin: 5vh 5vw;
-    background-color: cyan;
+    background-color: rgb(36, 53, 110);
     font-family: orbitron;
+    color: white;
 }
 #map {
     height: 80vh;
@@ -32,12 +33,12 @@ h2{
     border-radius: 3px;
     font-size: 12px;
     text-align: center;
-    color: #fff;
-    background: #ee8a65;
+    color: black;
+    background: #747a86;
 }
 
 #weather, #weather2 {
-	background-color: white;
+	background-color: rgb(111, 111, 153);
 	width: 80%;
 	padding: 5px;
     margin: 10px auto;
